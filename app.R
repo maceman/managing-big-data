@@ -35,9 +35,6 @@ head(sb_data)
 pepsi_data$pepsi_bing <- get_sentiment(pepsi_data$activity_text, method="bing")
 head(pepsi_data)
 
-
-
-
 ### Displays the results of the sentiment analysis by state
 library(dplyr)
 sb_state_dply <- sb_data %>% 
@@ -197,7 +194,6 @@ wordcloud(
   pepsi_data$activity_text, scale = c(5,0.5), max.words = 100, random.order = FALSE, rot.per =
     0.35, use.r.layout = FALSE, colors = brewer.pal(8, "Dark2")
 )
-
 
 ######################################################################################################
 ### Construction of the Shiny Dashboard
